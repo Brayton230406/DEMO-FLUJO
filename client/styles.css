@@ -1,0 +1,23 @@
+:root { color-scheme: light dark; font-family: system-ui, sans-serif; --accent: #16634b; }
+* { box-sizing: border-box; }
+body { margin: 0 auto; padding: 0 1.25rem; max-width: 1100px; background: #f5f7f6; color: #182d26; }
+header { padding: 2rem 0 1rem; }
+header p, body > footer { color: #496057; }
+h1 { margin: .3rem 0; }
+main { display: grid; gap: 2rem; }
+.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); }
+.card, .carrito-panel { background: #fff; border: 1px solid #b8cbc2; border-radius: 12px; padding: 1.25rem; }
+.card h3 { margin-top: 0; }
+button { font: inherit; cursor: pointer; background: var(--accent); color: white; border: 0; border-radius: 6px; padding: .65rem 1rem; }
+button:disabled { opacity: .6; cursor: wait; }
+:focus-visible { outline: 3px solid #bf5c00; outline-offset: 4px; }
+#carrito { padding-left: 1.25rem; }
+#carrito li { margin-bottom: .75rem; }
+#status { min-height: 1.5em; margin-top: 1rem; }
+body > footer { padding: 1.5rem 0; }
+@media (prefers-color-scheme: dark) {
+  body { background: #101b17; color: #edf6f1; }
+  .card, .carrito-panel { background: #1b2c24; border-color: #5d776a; }
+  header p, body > footer { color: #b7cbbf; }
+  :focus-visible { outline-color: #ffc477; }
+}

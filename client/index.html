@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo Flujo Cliente-Servidor</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header><p>Práctica 8.5 · Cliente / Servidor / Datos</p><h1>Catálogo de Productos</h1></header>
+  <main>
+    <aside id="aviso-pages" aria-labelledby="titulo-pages" hidden>
+      <h2 id="titulo-pages">Configuración de la API</h2>
+      <p>GitHub Pages publica únicamente este cliente. La API Express de esta práctica se ejecuta localmente con <code>npm start</code>.</p>
+      <p>Para probar catálogo y pedidos, descarga el proyecto, inicia la API y abre el cliente con Live Server en <code>http://127.0.0.1:5500/client/index.html</code> o con <code>npm run client</code> en <code>http://localhost:5173</code>. Esta página HTTPS no se conecta automáticamente a tu API local.</p>
+      <p><a href="https://github.com/Brayton230406/DEMO-FLUJO#readme">Ver código e instrucciones</a></p>
+    </aside>
+    <section aria-labelledby="catTitulo">
+      <h2 id="catTitulo">Productos disponibles</h2>
+      <div id="catalogo" class="grid"></div>
+      <button id="recargar" type="button" hidden>Reintentar carga</button>
+    </section>
+    <section aria-labelledby="carTitulo" class="carrito-panel">
+      <h2 id="carTitulo">Carrito</h2>
+      <p id="vacio">El carrito está vacío.</p>
+      <ul id="carrito"></ul>
+      <p>Total: <strong id="total">$0.00</strong></p>
+      <button id="enviar" type="button">Enviar pedido</button>
+      <div id="status" aria-live="polite" aria-atomic="true" role="status"></div>
+    </section>
+  </main>
+  <footer><p>Demo educativa: carrito en memoria y pedidos simulados.</p></footer>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

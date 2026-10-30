@@ -1,0 +1,23 @@
+{
+  "name": "demo-flujo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Práctica 8.5: flujo cliente-servidor",
+  "scripts": {
+    "start": "node server/server.js",
+    "client": "node scripts/client.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
